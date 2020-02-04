@@ -1,0 +1,74 @@
+.main-view-container {
+  width: 40em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.img-container,
+.img-container img {
+  width: 100%;
+}
+
+.img-container {
+  border-bottom: 2px solid rgb(219, 219, 219);
+}
+
+.view-description {
+  display: flex;
+  justify-content: space-between;
+  // background-color: slateblue;
+  width: 100%;
+  flex-wrap: wrap;
+  // border: 2px slateblue solid;
+  padding: 1.2em 1.8em;
+}
+
+.view-project-title {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.view-company {
+  width: 100%;
+}
+
+.view-descripition-child.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  // background-color: slateblue;
+  width: 100%;
+}
+.view-buzz-word {
+  margin: 1em 0;
+}
+
+.view-hate-like-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 4rem;
+  margin: 0.5em 0;
+}
+
+.hate {
+  cursor: pointer;
+  border: 2px solid rgb(226, 0, 0);
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+}
+
+.like {
+  cursor: pointer;
+  border: 2px solid rgb(37, 207, 3);
+  border-radius: 5px;
+  width: 40%;
+  text-align: center;
+}

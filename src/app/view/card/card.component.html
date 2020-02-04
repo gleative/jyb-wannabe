@@ -1,0 +1,30 @@
+<div class="main-view-container">
+  <div class="img-container">
+    <img [src]="project.imagePath" alt="" />
+  </div>
+
+  <div class="view-description">
+    <div class="view-descripition-child first-row">
+      <p class="view-project-title ">{{ project.name }}</p>
+      <p class="view-travel-time">
+        <img src="../../../assets/commute-24px.svg" alt="" />35min
+      </p>
+    </div>
+
+    <p class="view-company view-descripition-child">
+      {{ project.companyName }}
+    </p>
+    <div class="view-buzz-words view-descripition-child">
+      <span class="view-buzz-word" *ngFor="let buzzWord of project.buzzWords">
+        #{{ buzzWord }}
+      </span>
+    </div>
+  </div>
+  <div class="view-hate-like-container">
+    <a class="hate" (click)="onHate(project.id)"
+      ><img src="../../../assets/thumb_down-34px-white.svg" alt=""
+    /></a>
+    <a class="like" (click)="onLike(project.id)">👍</a>
+  </div>
+  <button (click)="getDuration()">TRY</button>
+</div>

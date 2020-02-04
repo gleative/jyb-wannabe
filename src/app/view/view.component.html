@@ -1,0 +1,6 @@
+<div class="view-container" *ngFor="let project of projects">
+  <app-card
+    [project]="project"
+    *ngIf="project.id == currentProjectId"
+  ></app-card>
+</div>
